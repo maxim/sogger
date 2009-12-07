@@ -10,7 +10,10 @@ begin
     gem.email = "max@bitsonnet.com"
     gem.homepage = "http://github.com/maxim/sogger"
     gem.authors = ["Maxim Chernyak"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_dependency "meow"
+    gem.add_dependency "nokogiri"
+    gem.add_development_dependency "shoulda"
+    gem.add_development_dependency "fakeweb"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

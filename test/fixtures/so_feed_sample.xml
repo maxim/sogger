@@ -1,0 +1,1150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:creativeCommons="http://backend.userland.com/creativeCommonsRssModule" xmlns:re="http://purl.org/atompub/rank/1.0">
+    <title type="text">Recent Questions - Stack Overflow</title>
+    <link rel="self" href="http://stackoverflow.com/feeds" type="application/atom+xml" />
+    <link rel="alternate" href="http://stackoverflow.com/questions" type="text/html" />
+    <subtitle>most recent 30 from stackoverflow.com</subtitle>
+    <updated>2009-12-07T01:03:53Z</updated>
+    <id>http://stackoverflow.com/feeds</id>
+    <creativeCommons:license>http://www.creativecommons.org/licenses/by-nc/2.5/rdf</creativeCommons:license> 
+
+    <entry>
+        <id>http://stackoverflow.com/questions/1856203/windows-and-minibuffer-floating-over-the-frame</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Windows and Minibuffer floating over the frame</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="emacs"/>
+        <author><name>konr</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1856203/windows-and-minibuffer-floating-over-the-frame" />
+        <published>2009-12-06T18:48:09Z</published>
+        <updated>2009-12-07T01:03:42Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi!&lt;/p&gt;
+
+&lt;p&gt;When I start Emacs, its windows and its minibuffer start up floating on the main frame, leaving a lot of empty space (see: &lt;a href=&quot;http://scorciapino.com/pub/fotos/erroemacs.jpg&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt; and &lt;a href=&quot;http://scorciapino.com/pub/fotos/erroemacs2.jpg&quot; rel=&quot;nofollow&quot;&gt;here&lt;/a&gt;). Any idea of what is going on and how to fix it?&lt;/p&gt;
+
+&lt;p&gt;Thanks!&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1853653/hidden-features-of-coldfusion</id>
+        <re:rank scheme="http://stackoverflow.com">2</re:rank>
+        <title type="text">Hidden features of ColdFusion</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="coldfusion"/><category scheme="http://stackoverflow.com/feeds/tags" term="subjective"/><category scheme="http://stackoverflow.com/feeds/tags" term="hidden-features"/><category scheme="http://stackoverflow.com/feeds/tags" term="easter-eggs"/>
+        <author><name>Sergii</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1853653/hidden-features-of-coldfusion" />
+        <published>2009-12-05T22:20:49Z</published>
+        <updated>2009-12-07T01:02:45Z</updated>
+        <summary type="html">
+            &lt;p&gt;Let's try to make this for our favourite technology too, how do you think?&lt;/p&gt;
+
+&lt;p&gt;Hidden code tricks, unknown usages of known features, application server easter eggs are what are we looking for.&lt;/p&gt;
+
+&lt;p&gt;So, proposed rules are simple:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;One feature per answer.&lt;/li&gt;
+&lt;li&gt;Code example, if it is the CFML/CFScript feature.&lt;/li&gt;
+&lt;li&gt;Application server name and version where it can be reproduced.&lt;/li&gt;
+&lt;li&gt;Link on the source, if re-posting someone (let's be honest).&lt;/li&gt;
+&lt;li&gt;Any additional requirements/tips to reproduce.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;hr&gt;&lt;/p&gt;
+
+&lt;p&gt;Example (old one, many of us should remember)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Credits easter egg with custom IE language&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Open your IE (6+), go to: Tools -&gt; Internet Options -&gt; Languages. &lt;/p&gt;
+
+&lt;p&gt;Add a new custom language called &quot;CFML&quot; (without quotes) and shift it to the top of list. &lt;/p&gt;
+
+&lt;p&gt;Then log into your ColdFusion Administrator and click on System Information. &lt;/p&gt;
+
+&lt;p&gt;Funny pop-up should show up. &lt;/p&gt;
+
+&lt;p&gt;It works in CFMX 6, 7.2 and Adobe CF 8 (9 not checked).&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857204/objective-c-problem-with-strings</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Objective c, problem with strings</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="nsstring"/><category scheme="http://stackoverflow.com/feeds/tags" term="sqlite"/>
+        <author><name>unknown (google)</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857204/objective-c-problem-with-strings" />
+        <published>2009-12-07T00:53:30Z</published>
+        <updated>2009-12-07T01:02:36Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi, 
+first of all please let me say that I am quite new to objective c development. I am writing a small app for personal use for the iphone, but I have some problems executing the following code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;NSString *sql = [[NSString alloc] initWithFormat:@&quot;select color_r, color_g, color_b from Calendar where ROWID = %@&quot;, [calendarsID objectForKey:[arrayColors objectAtIndex:row]]];
+
+sqlite3_stmt *selectstmt;
+
+if(sqlite3_prepare_v2(database, sql, -1, &amp;amp;selectstmt, NULL) == SQLITE_OK)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The compiler tells me that I am passing argument 2 of sqlite3_prepare_v2 from an incompatible pointer type. The program gets, anyhow, compiled and runs but, when it has to execute the code that I've just shown you, it produces an error. It says that there is a syntax error in the query, and the syntax error is just in the last part of the query. Instead of having:&lt;/p&gt;
+
+&lt;p&gt;select color_, color_g, color_b from Calendar where ROWID = 63 (for example)&lt;/p&gt;
+
+&lt;p&gt;I get strange characters in the place of the last number (63). I guess this is a problem related to string conversion. Can please anyhone help me?&lt;/p&gt;
+
+&lt;p&gt;Thank you very much for your attention.
+Alessio&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1854623/how-to-get-the-x-y-coordinate-of-a-mouse-click-with-win32-c-on-a-directx-object</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">How to get the x,y coordinate of a mouse-click with win32 C++ on a directx object?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="c++"/><category scheme="http://stackoverflow.com/feeds/tags" term="directx"/><category scheme="http://stackoverflow.com/feeds/tags" term="win32"/>
+        <author><name>Chris</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1854623/how-to-get-the-x-y-coordinate-of-a-mouse-click-with-win32-c-on-a-directx-object" />
+        <published>2009-12-06T07:14:23Z</published>
+        <updated>2009-12-07T01:01:46Z</updated>
+        <summary type="html">
+            &lt;p&gt;How can I get the x,y coordinate of a mouse click, to see if it is over my menu button drawn by directx?  Currently, my codebase has the following mouse-related class that doesn't seem to be able to give me this..I'm not sure how this might work.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;InputMouse::InputMouse() :
+    m_LastX(-1),
+    m_LastY(-1)
+{
+    m_MouseActionEvent.clear();
+}
+
+InputMouse::~InputMouse()
+{
+
+}
+
+void InputMouse::PostUpdate()
+{
+    m_CurrentAction.clear();
+}
+
+bool InputMouse::IsEventTriggered(int eventNumber)
+{
+    for (unsigned int i = 0; i &amp;lt; m_CurrentAction.size(); i++)
+    {
+        if (m_MouseActionEvent.size() &amp;gt; 0 &amp;amp;&amp;amp; m_MouseActionEvent[m_CurrentAction[i]] == eventNumber)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+void InputMouse::AddInputEvent(int action, int eventNumber)
+{
+    m_MouseActionEvent[action] = eventNumber;
+}
+
+void InputMouse::SetMouseMouse(int x, int y)
+{
+    if (m_LastX != -1)
+    {
+        if (x &amp;gt; m_LastX)
+        {
+            m_CurrentAction.push_back(MOUSE_RIGHT);
+        }
+        else if (x &amp;lt; m_LastX)
+        {
+            m_CurrentAction.push_back(MOUSE_LEFT);
+        }
+
+        if (y &amp;gt; m_LastY)
+        {
+            m_CurrentAction.push_back(MOUSE_UP);
+        }
+        else if (y &amp;lt; m_LastY)
+        {
+            m_CurrentAction.push_back(MOUSE_DOWN);
+        }
+    }
+
+    m_LastX = x; 
+    m_LastY = y;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1856887/is-there-a-way-to-make-the-code-folding-stay-folded-in-delphi-2010</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Is there a way to make the &quot;Code Folding&quot; Stay Folded In Delphi 2010</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="delphi"/><category scheme="http://stackoverflow.com/feeds/tags" term="delphi-2010"/><category scheme="http://stackoverflow.com/feeds/tags" term="code-folding"/>
+        <author><name>Cape Cod Gunny</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1856887/is-there-a-way-to-make-the-code-folding-stay-folded-in-delphi-2010" />
+        <published>2009-12-06T22:39:14Z</published>
+        <updated>2009-12-07T01:01:38Z</updated>
+        <summary type="html">
+            &lt;p&gt;I absolutely love the &lt;b&gt;Code Folding&lt;/b&gt; feature inside Delphi 2010. However, each time start Delphi 2010 and reopen my project the code I had peviously folded down is no longer folded. Is there a way to keep the folded code, folded when you close down the IDE?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857158/adding-floats-with-javascript</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Adding floats with javascript</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tags" term="jquery"/>
+        <author><name>jpsilvashy</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857158/adding-floats-with-javascript" />
+        <published>2009-12-07T00:36:19Z</published>
+        <updated>2009-12-07T01:01:03Z</updated>
+        <summary type="html">
+            &lt;p&gt;I'm using jQuery, and I want to sum up the values in my table column, everything seems to work fine, but my value is returned a string with all the values added like: &lt;code&gt;123.5013.0012.35&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;How can I sum these properly?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;var totals
+
+$(&quot;.add&quot;).each(function(i) {
+  totals += parseFloat($(this).text()).toFixed(2);
+});
+
+console.log(totals);
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857131/haskell-question-regarding-data</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Haskell question regarding data</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="haskell"/>
+        <author><name>usr</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857131/haskell-question-regarding-data" />
+        <published>2009-12-07T00:28:27Z</published>
+        <updated>2009-12-07T01:00:55Z</updated>
+        <summary type="html">
+            &lt;p&gt;Code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;data Exp = Const a | Eq Exp Exp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I want the &lt;em&gt;Const a&lt;/em&gt; to contain a value of type show so that i can print it later. So in C# i would write:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class Const : Exp { IShow X; }
+class Eq : Exp { Exp X, Y; }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How can i do that in Haskell?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857050/using-apples-automator-to-pass-filenames-to-a-shell-script</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Using apple's Automator to pass filenames to a shell script.</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="shell"/><category scheme="http://stackoverflow.com/feeds/tags" term="script"/><category scheme="http://stackoverflow.com/feeds/tags" term="automator"/>
+        <author><name>John  </name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857050/using-apples-automator-to-pass-filenames-to-a-shell-script" />
+        <published>2009-12-06T23:41:19Z</published>
+        <updated>2009-12-07T01:00:46Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have an automator script that I'd like to run on a folder.  I want the script to take each file in the folder and run my shell command on it.  Automator is set to pass input to stdin, but I don't think I'm using stdin correctly below, can you help please?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;for f in &quot;$@&quot; 
+do
+    java -Xmx1000m -jar /Users/myprog/myprog.jar $f 
+done
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857222/masks-in-air-with-actionscript-3</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Masks in AIR with Actionscript 3</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="air"/><category scheme="http://stackoverflow.com/feeds/tags" term="actionscript-3"/><category scheme="http://stackoverflow.com/feeds/tags" term="as3"/><category scheme="http://stackoverflow.com/feeds/tags" term="mask"/>
+        <author><name>webdreamer</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857222/masks-in-air-with-actionscript-3" />
+        <published>2009-12-07T01:00:18Z</published>
+        <updated>2009-12-07T01:00:18Z</updated>
+        <summary type="html">
+            &lt;p&gt;I'm trying to do a mask on a circle shape in ActionScript 3 (I'm using the Flex AIR framework). It has to do with the ecological footprint, each circle representing one earth.
+This ecological footprint picture is inside a container. The problem is that the mask seems to be fixed, though the picture floats. When I scroll the container down, the picture will scroll just fine, but the mask won't, clipping out the top of the picture.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mask = new UIMovieClip();
+mask.graphics.beginFill(0xFFFFFF);
+mask.graphics.drawRect(radius,radius+radius*2*(1-(ecoWeight-Math.floor(ecoWeight))),1000,1000);
+mask.graphics.endFill();    
+earth = new UIMovieClip();    
+earth.graphics.beginFill(0xFFFFFF);
+earth.graphics.drawCircle(radius,radius,radius);
+earth.mask=mask;
+earth.graphics.endFill();
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857191/jquery-is-mouse-still-over-the-element</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">jQuery: is mouse still over the element?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="jquery"/><category scheme="http://stackoverflow.com/feeds/tags" term="mouseover"/>
+        <author><name>thedp</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857191/jquery-is-mouse-still-over-the-element" />
+        <published>2009-12-07T00:48:05Z</published>
+        <updated>2009-12-07T01:00:17Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hello,&lt;/p&gt;
+
+&lt;p&gt;I would like to be able to detect if the mouse is still over the element in the following scenario:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;If mouseover then sleep for a few seconds.&lt;/li&gt;
+&lt;li&gt;Once done sleeping check of the mouse is still over the same element.&lt;/li&gt;
+&lt;li&gt;If true then do something.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;How can I achieve #2?&lt;/p&gt;
+
+&lt;p&gt;Thank you.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1855773/avoid-slicing-of-exception-types-c</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Avoid slicing of exception types (C++)</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="gcc"/><category scheme="http://stackoverflow.com/feeds/tags" term="exceptions"/><category scheme="http://stackoverflow.com/feeds/tags" term="slicing"/><category scheme="http://stackoverflow.com/feeds/tags" term="c++"/><category scheme="http://stackoverflow.com/feeds/tags" term="derived"/>
+        <author><name>shojtsy</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1855773/avoid-slicing-of-exception-types-c" />
+        <published>2009-12-06T16:08:38Z</published>
+        <updated>2009-12-07T01:00:16Z</updated>
+        <summary type="html">
+            &lt;p&gt;I am designing an exception hierarchy in C++ for my library. The &quot;hierarchy&quot; is 4 classes derived from std::runtime_error. I would like to avoid the &lt;a href=&quot;http://stackoverflow.com/questions/274626/what-is-the-slicing-problem-in-c&quot;&gt;slicing problem&lt;/a&gt; for the exception classes so made the copy constructors protected. But apparently gcc requires to call the copy constructor when throwing instances of them, so complains about the protected copy constructors. Visual C++ 8.0 compiles the same code fine. Are there any portable way to defuse the slicing problem for exception classes? Does the standard say anything about whether an implementation could/should require copy constructor of a class which is to be thrown?&lt;/p&gt;
+
+&lt;h3&gt;Edit: Answering my own questions&lt;/h3&gt;
+
+&lt;p&gt;Thanks for the answers. The two portable ways I have found to stop clients of my library from catching exceptions incorrectly by value are&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Throw exceptions from inside &lt;a href=&quot;http://www.parashift.com/c++-faq-lite/exceptions.html#faq-17.10&quot; rel=&quot;nofollow&quot;&gt;virtual raise&lt;/a&gt; methods of the exception classes, and make copy constructors protected. (Thanks D.Shawley)&lt;/li&gt;
+&lt;li&gt;Throw derived exceptions from the library and publish exception base classes for clients to catch. The base classes could have protected copy constructors, which only allows the good way of catching them. (mentioned &lt;a href=&quot;http://stackoverflow.com/questions/1095225/exception-slicing-is-this-due-to-generated-copy-constructor&quot;&gt;here&lt;/a&gt; for a simmilar question)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;The C++ standard does state that copy constructor needs to be accessible at the point of throw. Visual C++ 8.0 in my configuration violated this part of the standard by not enforcing the presence of the copy constructor. In section 15.1.3:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A throw-expression initializes a temporary object, the type of which is determined by removing any top-level cv-qualifiers from the static type of the operand of throw and adjusting the type from “array of T” or “function returning T” to “pointer to T” or “pointer to function returning T”, respectively.&lt;/p&gt;
+  
+  &lt;p&gt;If the use of the temporary object can be eliminated without changing the meaning of the program except for the execution of constructors and destructors associated with the use of the temporary object (12.2), then the exception in the handler can be initialized directly with the argument of the throw expression. When the thrown object is a class object, and the copy constructor used to initialize the temporary copy is not accessible, the program is ill-formed (even when the temporary object could otherwise be eliminated)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/386576/multilingual-flex-app</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Multilingual Flex App</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="flex"/><category scheme="http://stackoverflow.com/feeds/tags" term="multilanguage"/><category scheme="http://stackoverflow.com/feeds/tags" term="fonts"/><category scheme="http://stackoverflow.com/feeds/tags" term="runtime"/>
+        <author><name>unknown (google)</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/386576/multilingual-flex-app" />
+        <published>2008-12-22T15:53:12Z</published>
+        <updated>2009-12-07T01:00:00Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi, 
+I'm working on a multilingual flex application that has to run in 27+ languages, including asian, hebrew and arabic, as well as all european languages.&lt;/p&gt;
+
+&lt;p&gt;We work with an embedded font (Myriad Pro) and have plenty of styles in a css that make use of that embedded font. We've tested with a modified version of Myriad including all non western unicode chars taken from Arial Unicode and it works ok, but the weight of the swf is unacceptable.&lt;/p&gt;
+
+&lt;p&gt;We have this two lines in our css..&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;@font-face 
+{
+    src: url(&quot;MyriadPro-Semibold.otf&quot;);
+    fontFamily: &quot;Default Font&quot;;
+    fontWeight: bold;
+    advancedAntiAliasing: true;
+}
+@font-face 
+{
+    src: url(&quot;MyriadPro-Regular.otf&quot;);
+    fontFamily: &quot;Default Font&quot;;
+    advancedAntiAliasing: true;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and the rest of stlyes use the &quot;Default Font&quot; when needed.&lt;/p&gt;
+
+&lt;p&gt;What is the best solution for implementing the multilingual apps with runtime loading fonts, while maintaining the current stylesheet?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1321256/type-code-in-to-a-text-input-form-how</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Type code in to a text input form, how?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="php"/><category scheme="http://stackoverflow.com/feeds/tags" term="input"/><category scheme="http://stackoverflow.com/feeds/tags" term="form"/><category scheme="http://stackoverflow.com/feeds/tags" term="echo"/>
+        <author><name>Per Magnusson</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1321256/type-code-in-to-a-text-input-form-how" />
+        <published>2009-08-24T09:07:43Z</published>
+        <updated>2009-12-07T01:00:00Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hello! 
+I want to know the best way of writing out my &quot;$imagepath&quot; in to this input  &lt;/p&gt;
+
+&lt;p&gt;This is my upload script&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;?php
+        if(isset($_POST['submit'])){
+          if (isset ($_FILES['new_image'])){
+              $imagename = $_FILES['new_image']['name'];
+              $source = $_FILES['new_image']['tmp_name'];
+              $target = &quot;temporary_images/&quot;.$imagename;
+              move_uploaded_file($source, $target);
+
+              $imagepath = $imagename;
+              $save = &quot;temporary_images/&quot; . $imagepath; //This is the new file you saving
+              $file = &quot;temporary_images/&quot; . $imagepath; //This is the original file
+
+              list($width, $height) = getimagesize($file) ; 
+
+              $modwidth = 350;                         
+              $modheight = 100; 
+
+              $tn = imagecreatetruecolor($modwidth, $modheight) ; 
+              $image = imagecreatefromjpeg($file) ; 
+              imagecopyresampled($tn, $image, 0, 0, 0, 0, $modwidth, $modheight, $width, $height) ; 
+
+              imagejpeg($tn, $save, 100) ; 
+
+              $save = &quot;temporary_images/sml_&quot; . $imagepath; //This is the new file you saving
+              $file = &quot;temporary_images/&quot; . $imagepath; //This is the original file
+
+              list($width, $height) = getimagesize($file) ; 
+
+              $modwidth = 80; 
+              $modheight = 100; 
+
+              $tn = imagecreatetruecolor($modwidth, $modheight) ; 
+              $image = imagecreatefromjpeg($file) ; 
+              imagecopyresampled($tn, $image, 0, 0, 0, 0, $modwidth, $modheight, $width, $height) ; 
+
+              imagejpeg($tn, $save, 100) ; 
+            echo &quot;Large image: &amp;lt;img src='temporary_images/&quot;.$imagepath.&quot;'&amp;gt;&amp;lt;br&amp;gt;&quot;; 
+            echo &quot;$imagepath&quot;
+          }
+        }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And this is my form&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;form&amp;gt;
+ &amp;lt;input name=&quot;animeinput&quot; id=&quot;animeinput&quot; size=&quot;20&quot; class=&quot;textbox&quot;&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1093731/creating-an-application-print-queue</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Creating an application print queue</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term=".net"/><category scheme="http://stackoverflow.com/feeds/tags" term="printing"/>
+        <author><name>Dan</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1093731/creating-an-application-print-queue" />
+        <published>2009-07-07T17:41:06Z</published>
+        <updated>2009-12-07T01:00:00Z</updated>
+        <summary type="html">
+            &lt;p&gt;We've received a rather tricky business requirement.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Users should be able to store print jobs in the application, until the user explicitly decides to send the jobs to the actual printer.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;The easy solution (the way I see it) is to have a small windows application installed on the clients computers which stores the jobs in a queue locally on the clients computers. Anyone know if such a program exists?&lt;/p&gt;
+
+&lt;p&gt;The implement-ourselves option seems rather complicated. Storing the printed files in a database in either, word, pdf, xps or prn format until the user decides to print.
+This option is further complicated by that it should be possible to do it directly from MS Word. Any pointers to how to go about it?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/855030/help-linq-to-sql</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Help Linq to Sql</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="linq-to-sql"/><category scheme="http://stackoverflow.com/feeds/tags" term="asp.net-mvc"/>
+        <author><name>John Prado</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/855030/help-linq-to-sql" />
+        <published>2009-05-12T21:46:28Z</published>
+        <updated>2009-12-07T01:00:00Z</updated>
+        <summary type="html">
+            &lt;p&gt;Why am I getting a exception when ApplyPropertyChanges???&lt;/p&gt;
+
+&lt;p&gt;The code is almost the same when I'm editing a user table but is not working with my news table.&lt;/p&gt;
+
+&lt;p&gt;The create, delete and details are all working fine but when I try to edit a news I'm getting the exception below:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The ObjectStateManager does not contain a ObjectStateEntry 'MagixCMS.Models.noticia'&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace MagixCMS.Models
+{
+    public class NoticiaRepository : INoticiaRepository
+    {
+        #region INoticiaRepository Members
+
+        magixcmsEntities _entities = new magixcmsEntities();
+
+        public noticia CreateNoticia(noticia noticiaToCreate)
+        {
+            _entities.AddTonoticiaSet(noticiaToCreate);
+            _entities.SaveChanges();
+            return noticiaToCreate;
+        }
+
+        public void DeletaNoticia(noticia noticiaToDelete)
+        {
+            var noticiaOriginal = GetNoticia(noticiaToDelete.Id);
+            _entities.DeleteObject(noticiaOriginal);
+            _entities.SaveChanges();
+        }
+
+        public noticia EditNoticia(noticia noticiaToEdit)
+        {
+            var noticiaOriginal = GetNoticia(noticiaToEdit.Id);
+            _entities.ApplyPropertyChanges(noticiaToEdit.EntityKey.EntitySetName, noticiaToEdit); //EXCEPTION HERE
+            _entities.SaveChanges();
+            return noticiaToEdit;
+        }
+
+        public noticia GetNoticia(int id)
+        {
+            return (from c in _entities.noticiaSet where c.Id == id select c).FirstOrDefault();
+        }
+
+        public IEnumerable&amp;lt;noticia&amp;gt; ListNoticias()
+        {
+            return _entities.noticiaSet.ToList();
+        }
+
+        #endregion
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I google the exception and didn't found much help.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1736314/writing-to-an-xml-file-with-xmllite</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Writing to an xml file with xmllite?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="c++"/><category scheme="http://stackoverflow.com/feeds/tags" term="xml"/><category scheme="http://stackoverflow.com/feeds/tags" term="xmllite"/>
+        <author><name>Chris</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1736314/writing-to-an-xml-file-with-xmllite" />
+        <published>2009-11-15T01:56:32Z</published>
+        <updated>2009-12-07T00:59:40Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have an xml file which holds a set of &quot;&lt;code&gt;game&lt;/code&gt;&quot; nodes (which contain details about saved gameplay, as you'd save your game on any console game).  All of this is contained within a &quot;&lt;code&gt;games&lt;/code&gt;&quot; root node.  I'm implementing save functionality to this xml file and wish to be able to append or overwrite a &quot;&lt;code&gt;game&lt;/code&gt;&quot; node and its child nodes within the &quot;&lt;code&gt;games&lt;/code&gt;&quot; root node.  &lt;/p&gt;
+
+&lt;p&gt;How can this be accomplished with &lt;code&gt;xmllite.dll&lt;/code&gt;?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1856915/nice-way-to-pass-parameters-to-pdo</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Nice way to pass parameters to PDO</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="php"/><category scheme="http://stackoverflow.com/feeds/tags" term="sql"/><category scheme="http://stackoverflow.com/feeds/tags" term="query"/><category scheme="http://stackoverflow.com/feeds/tags" term="parameters"/><category scheme="http://stackoverflow.com/feeds/tags" term="varargs"/>
+        <author><name>Ramon</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1856915/nice-way-to-pass-parameters-to-pdo" />
+        <published>2009-12-06T22:48:22Z</published>
+        <updated>2009-12-07T00:59:29Z</updated>
+        <summary type="html">
+            &lt;p&gt;Positional parameters become a nightmare when dealing with more than 3 or 4 parameters. Named parameters are verbose. I'm thinking of doing this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;query(&quot;SELECT * FROM users WHERE username = &quot;, $username, &quot; AND password = &quot;, $password)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;With dynamic parameters (using &lt;code&gt;func_get_args()&lt;/code&gt;), every second one being transformed into a positional parameter.  &lt;/p&gt;
+
+&lt;p&gt;I've never seen this before and wanted to know if anyone has done this before and why/why not?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857083/how-functional-language-are-different-from-the-language-implementation-point-of-v</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">How Functional language are different from the language implementation point of view.</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="functional-programming"/><category scheme="http://stackoverflow.com/feeds/tags" term="haskell"/><category scheme="http://stackoverflow.com/feeds/tags" term="ml"/><category scheme="http://stackoverflow.com/feeds/tags" term="lisp"/>
+        <author><name>Dinesh Simkhada</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857083/how-functional-language-are-different-from-the-language-implementation-point-of-v" />
+        <published>2009-12-06T23:59:49Z</published>
+        <updated>2009-12-07T00:59:14Z</updated>
+        <summary type="html">
+            &lt;p&gt;There is whole new paradigm and needs total change of though of programming when using Functional programming languages compared to the procedural programming language, lazy, higher order functions, purity, monads..etc which we can normally doesn't see in many imperative and oop languages. but how implementation of these languages differs from imperative or oop languages here i mean memory management or the internal stuffs like pointers etc, there is the function languages which runs on top of JVM does this means the internal working of these languages are the same as other languages ?.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857179/sql-server-replication-consolidation</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">SQL Server Replication, Consolidation</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="sql-server"/><category scheme="http://stackoverflow.com/feeds/tags" term="replication"/><category scheme="http://stackoverflow.com/feeds/tags" term="consolidation"/>
+        <author><name>BrainMan</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857179/sql-server-replication-consolidation" />
+        <published>2009-12-07T00:42:42Z</published>
+        <updated>2009-12-07T00:59:13Z</updated>
+        <summary type="html">
+            &lt;p&gt;How do I consolidate multiple publications into 1 consolidated table on the subscriber? For example. Consider a very simple sales model where we replicate sales data from the stores to the central office.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Store 1 Sales Table  
+=====================  
+Item     Qty      Amt  
+=====================  
+111       2     10.00  
+222       1      7.00  
+333       1     12.00  
+
+Store 2 Sales Table
+=====================
+Item     Qty      Amt
+=====================
+111       2     18.00
+222       1     13.00
+333       1      4.00
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;How do I replicate these two sales publications from the publisher to ONE consolidated sales table at the subscriber:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Central Office
+==============================
+Store   Item     Qty       Amt
+==============================
+1        111       2     10.00
+1        222       1      7.00
+1        333       1     12.00
+2        111       2     18.00
+2        222       1     13.00
+2        333       1      4.00
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1856963/python-soappy-add-header</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">python soappy add header</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="python"/><category scheme="http://stackoverflow.com/feeds/tags" term="soap"/><category scheme="http://stackoverflow.com/feeds/tags" term="soappy"/><category scheme="http://stackoverflow.com/feeds/tags" term="headers"/>
+        <author><name>dandu</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1856963/python-soappy-add-header" />
+        <published>2009-12-06T23:13:08Z</published>
+        <updated>2009-12-07T00:57:17Z</updated>
+        <summary type="html">
+            &lt;p&gt;I have the following PHP example code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$client = new SoapClient(&quot;http://example.com/example.wsdl&quot;);
+
+$h = Array();
+array_push($h, new SoapHeader(&quot;http://example2.com/example2/&quot;, &quot;h&quot;, &quot;v&quot;));
+$client-&amp;gt;__setSoapHeaders($h);
+
+$s = $client-&amp;gt;__soapCall('Op', $data);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;My question: what's the SOAPpy equivalent for the SoapHeader() and __setSoapHeaders() part?&lt;/p&gt;
+
+&lt;h3&gt;Related question&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://stackoverflow.com/questions/1481313/how-to-add-header-while-making-soap-request-using-soappy&quot;&gt;How to add header while making soap request using soappy&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1808375/send-and-receive-data-trough-the-power-network</id>
+        <re:rank scheme="http://stackoverflow.com">3</re:rank>
+        <title type="text">Send and receive data trough the power network</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="networking"/><category scheme="http://stackoverflow.com/feeds/tags" term="communication"/><category scheme="http://stackoverflow.com/feeds/tags" term="api"/><category scheme="http://stackoverflow.com/feeds/tags" term="library"/>
+        <author><name>luvieere</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1808375/send-and-receive-data-trough-the-power-network" />
+        <published>2009-11-27T12:06:48Z</published>
+        <updated>2009-12-07T00:57:01Z</updated>
+        <summary type="html">
+            &lt;p&gt;I'm &lt;strong&gt;not&lt;/strong&gt; interested in a hardware solution, I want to know about software that may &quot;read&quot; modulated signal received trough the power supply - some sort of a low-level driver that would access the power signal in a convenient place and demodulate it.&lt;/p&gt;
+
+&lt;p&gt;Is there a way to receive signal from the computer's power supply? I'm interested in an API or library that would allow the computer to be seen as a node in a &lt;a href=&quot;http://en.wikipedia.org/wiki/Power%5Fline%5Fcommunication&quot; rel=&quot;nofollow&quot;&gt;Power Line Communication&lt;/a&gt; network and receive data directly through the power cable, without the need for a converter. Is there any active research in this field?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Edit:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;There is software that reads monitors and displays internal component voltages - DC voltage after being converted and filtered by the power supply - now I need is a method of data encoding that would be invariant to conversion and filtering, the original signal embedded in AC being present in some form within the converted DC signal.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1831273/dashcommerce-is-discontinued-where-to-look-for-support</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">Dashcommerce is discontinued, where to look for support?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="storefront"/>
+        <author><name>ViktorBergman</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1831273/dashcommerce-is-discontinued-where-to-look-for-support" />
+        <published>2009-12-02T07:49:47Z</published>
+        <updated>2009-12-07T00:56:54Z</updated>
+        <summary type="html">
+            &lt;p&gt;I was quite shocked to be welcomed by a simple message on dashCommerce.org yesterday telling me that the product has been discontinued. The projectowner did not even send out an email to the members of the forum informing about this.&lt;/p&gt;
+
+&lt;p&gt;So here we stand we with an orphant storefront with no community at all to look for help at.&lt;/p&gt;
+
+&lt;p&gt;Does anybody now &lt;strong&gt;why&lt;/strong&gt; they just left the surface of the earth?
+And is there any interest in starting up a forum for the active users?&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857215/audio-libraries-for-digital-signal-processing-in-c</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Audio libraries for digital signal processing in C#</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="xaudio2"/><category scheme="http://stackoverflow.com/feeds/tags" term="dsp"/>
+        <author><name>Roderick</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857215/audio-libraries-for-digital-signal-processing-in-c" />
+        <published>2009-12-07T00:56:46Z</published>
+        <updated>2009-12-07T00:56:46Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hello all,&lt;/p&gt;
+
+&lt;p&gt;My problem is this:&lt;/p&gt;
+
+&lt;p&gt;I'm developing a reasonably small application (which needs to be able to grow in the future, but for now, limited functionality will suffice) which recieves audio (16bit mono @ 44.1kHz) and performs fourier transforms and filtering on the data.  My experience with all the fields you can imagine this involves is limited, but i've been researching it a fair bit lately and have some understanding.  My funding is limited, and I am unable to use any libraries which are under the GPL or similar licences (I need to be able to distruibute this app).  For the signal processing I've settled on MathNet libraries, and this seems as though it can handle the bulk of the processing (and I'll write the necessary filters).&lt;/p&gt;
+
+&lt;p&gt;The real problem is finding the sound library to use - I was hoping for something in C#, and while it seemed directSound was the best option, I'm reluctant to use it given microsoft has pretty much abandoned it (the company I work for will be upgrading its gear in the near future; I just want to increase the app.'s lifespan as best I can).  Do I use XAudio2? I need to be able to record the raw pcm data from a USB device and process it (+write it out to .wav files), and read the data straight from .wav files.  &lt;/p&gt;
+
+&lt;p&gt;Any help is appreciated&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857214/changing-default-paper-tray-with-adobe-acrobat</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">changing default paper tray with Adobe Acrobat</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="adobe-acrobat"/><category scheme="http://stackoverflow.com/feeds/tags" term="adobe"/><category scheme="http://stackoverflow.com/feeds/tags" term="acrobat"/>
+        <author><name>PNG Programmer</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857214/changing-default-paper-tray-with-adobe-acrobat" />
+        <published>2009-12-07T00:56:23Z</published>
+        <updated>2009-12-07T00:56:23Z</updated>
+        <summary type="html">
+            &lt;p&gt;Does anybody know how you can change the default printer tray when printing from an Adobe Acrobat object?  There are properties to change duplex settings but not paper tray.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857213/linq-query-expression-translator</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">LINQ query expression translator?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="c#"/><category scheme="http://stackoverflow.com/feeds/tags" term="linq"/><category scheme="http://stackoverflow.com/feeds/tags" term="query-expressions"/>
+        <author><name>naasking</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857213/linq-query-expression-translator" />
+        <published>2009-12-07T00:56:03Z</published>
+        <updated>2009-12-07T00:56:03Z</updated>
+        <summary type="html">
+            &lt;p&gt;I'm adding a LINQ interface to some custom objects, but the &lt;a href=&quot;http://msdn.microsoft.com/en-us/library/bb546090.aspx&quot; rel=&quot;nofollow&quot;&gt;C# compiler fails on type inference&lt;/a&gt;. However, I can write the equivalent query using the raw extension methods and type inference succeeds, so I'm not sure how the compiler is translating the query expression into extension method calls.&lt;/p&gt;
+
+&lt;p&gt;Is there a tool or compiler flag so I can view what the compiler is generating from my query expression so I figure this out?&lt;/p&gt;
+
+&lt;p&gt;This code is in an open source project, so I can provide links to source if that's helpful. Slight variations on the type signatures of the extension methods avoid this type inference error, but these variants don't have the semantics I'm after.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1857098/is-there-a-way-to-get-a-validationsummary-to-work-with-client-side-validators</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Is there a way to get a ValidationSummary to work with client-side validators?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term=".net"/><category scheme="http://stackoverflow.com/feeds/tags" term="asp.net"/><category scheme="http://stackoverflow.com/feeds/tags" term="validation"/><category scheme="http://stackoverflow.com/feeds/tags" term="c#"/><category scheme="http://stackoverflow.com/feeds/tags" term="form-validation"/>
+        <author><name>David</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1857098/is-there-a-way-to-get-a-validationsummary-to-work-with-client-side-validators" />
+        <published>2009-12-07T00:05:35Z</published>
+        <updated>2009-12-07T00:55:40Z</updated>
+        <summary type="html">
+            &lt;p&gt;The .NET ValidationSummary control aggregates error messages from validators that are fired on postback. Is there some way of getting it to also show error messages from client-side validators?&lt;/p&gt;
+
+&lt;p&gt;The problem I am working on is that on a long page, it is possible to click a submit button, have some client-side validators fail, but never see the error message. I would like to have a validation summary near the button so that the user is never left without feedback.&lt;/p&gt;
+
+&lt;p&gt;I would like any standard .NET validators that have client-side validation to be reflected in the validation summary, but I am most concerned with getting the RequiredFieldValidators to work.&lt;/p&gt;
+
+&lt;p&gt;I could hack it so that on clicking the button would automatically, after a short delay, display a general message telling the user to check for errors on the page. This would work for when no postback has occurred, but it would be ugly.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1856654/git-how-to-add-commit-removals-made-via-vanilla-rm</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">git: how to add/commit removals made via vanilla rm?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="git"/><category scheme="http://stackoverflow.com/feeds/tags" term="rm"/><category scheme="http://stackoverflow.com/feeds/tags" term="scm"/><category scheme="http://stackoverflow.com/feeds/tags" term="dvcs"/>
+        <author><name>kch</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1856654/git-how-to-add-commit-removals-made-via-vanilla-rm" />
+        <published>2009-12-06T21:23:12Z</published>
+        <updated>2009-12-07T00:55:30Z</updated>
+        <summary type="html">
+            &lt;p&gt;I deleted a bunch of files / directories from a git repository using &lt;code&gt;rm&lt;/code&gt;, the Finder, etc.&lt;/p&gt;
+
+&lt;p&gt;I'm looking for a git command that'll record these to the index as marked for removal. (As if I had called &lt;code&gt;git rm&lt;/code&gt; on them.)&lt;/p&gt;
+
+&lt;p&gt;I understand &lt;code&gt;git add -u&lt;/code&gt; will do this, along with a bunch of other things. I'd like my command to exclusively handle removals.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1856794/how-would-you-convert-this-mutable-tree-into-an-immutable-one</id>
+        <re:rank scheme="http://stackoverflow.com">1</re:rank>
+        <title type="text">How would you convert this mutable tree into an immutable one?</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="f#"/><category scheme="http://stackoverflow.com/feeds/tags" term="tree"/><category scheme="http://stackoverflow.com/feeds/tags" term="mutable"/><category scheme="http://stackoverflow.com/feeds/tags" term="immutable"/>
+        <author><name>gradbot</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1856794/how-would-you-convert-this-mutable-tree-into-an-immutable-one" />
+        <published>2009-12-06T22:12:10Z</published>
+        <updated>2009-12-07T00:55:19Z</updated>
+        <summary type="html">
+            &lt;h2&gt;How would you convert type Node into an immutable tree?&lt;/h2&gt;
+
+&lt;p&gt;This class implements a range tree that does not allow overlapping or adjacent ranges and instead joins them. For example if the root node is &lt;code&gt;{min = 10; max = 20}&lt;/code&gt; then it's right child and all its grandchildren must have a min and max value greater than 21.  The max value of a range must be greater than or equal to the min. I included a test function so you can run this as is and it will dump out any cases that fail. &lt;/p&gt;
+
+&lt;p&gt;I recommend starting with the Insert method to read this code.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;module StackOverflowQuestion
+
+open System
+
+type Range = 
+    { min : int64; max : int64 }
+with
+    override this.ToString() =
+        sprintf &quot;(%d, %d)&quot; this.min this.max
+
+[&amp;lt;AllowNullLiteralAttribute&amp;gt;]
+type Node(left:Node, right:Node, range:Range) =
+    let mutable left = left
+    let mutable right = right
+    let mutable range = range
+
+
+    // Symmetric to clean right
+    let rec cleanLeft(node : Node) =
+        if node.Left = null then
+            ()
+        elif range.max &amp;lt; node.Left.Range.min - 1L then 
+            cleanLeft(node.Left)
+        elif range.max &amp;lt;= node.Left.Range.max then
+            range &amp;lt;- {min = range.min; max = node.Left.Range.max}
+            node.Left &amp;lt;- node.Left.Right
+        else
+            node.Left &amp;lt;- node.Left.Right
+            cleanLeft(node)
+
+    // Clean right deals with merging when the node to merge with is not on the 
+    // left outside of the tree.  It travels right inside the tree looking for an 
+    // overlapping node.  If it finds one it merges the range and replaces the 
+    // node with its left child thereby deleting it.  If it finds a subset node
+    // it replaces it with its left child, checks it and continues looking right.
+    let rec cleanRight(node : Node) =
+        if node.Right = null then
+            ()
+        elif range.min &amp;gt; node.Right.Range.max + 1L then
+            cleanRight(node.Right)
+        elif range.min &amp;gt;= node.Right.Range.min then
+            range &amp;lt;- {min = node.Right.Range.min; max = range.max}
+            node.Right &amp;lt;- node.Right.Left
+        else 
+            node.Right &amp;lt;- node.Right.Left
+            cleanRight(node)
+
+    // Merger left is called whenever the min value of a node decreases.
+    // It handles the case of left node overlap/subsets and merging/deleting them.
+    // When no more overlaps are found on the left nodes it calls clean right.
+    let rec mergeLeft(node : Node) =
+        if node.Left = null then
+            ()
+        elif range.min &amp;lt;= node.Left.Range.min - 1L then 
+            node.Left &amp;lt;- node.Left.Left
+            mergeLeft(node)
+        elif range.min &amp;lt;= node.Left.Range.max + 1L then
+            range &amp;lt;- {min = node.Left.Range.min; max = range.max}
+            node.Left &amp;lt;- node.Left.Left
+        else 
+            cleanRight(node.Left)
+
+    // Symmetric to merge left
+    let rec mergeRight(node : Node) =
+        if node.Right = null then
+            ()
+        elif range.max &amp;gt;= node.Right.Range.max + 1L then
+            node.Right &amp;lt;- node.Right.Right
+            mergeRight(node)
+        elif range.max &amp;gt;= node.Right.Range.min - 1L then
+            range &amp;lt;- {min = range.min; max = node.Right.Range.max}
+            node.Right &amp;lt;- node.Right.Right
+        else 
+            cleanLeft(node.Right)
+
+
+    let (|Before|After|BeforeOverlap|AfterOverlap|Superset|Subset|) r = 
+        if r.min &amp;gt; range.max + 1L then After
+        elif r.min &amp;gt;= range.min then
+            if r.max &amp;lt;= range.max then Subset
+            else AfterOverlap
+        elif r.max &amp;lt; range.min - 1L then Before
+        elif r.max &amp;lt;= range.max then
+            if r.min &amp;gt;= range.min then Subset
+            else BeforeOverlap
+        else Superset
+
+    member this.Insert r = 
+        match r with
+        | After -&amp;gt;
+            if right = null then
+                right &amp;lt;- Node(null, null, r)
+            else
+                right.Insert(r)
+        | AfterOverlap -&amp;gt;
+            range &amp;lt;- {min = range.min; max = r.max}
+            mergeRight(this)
+        | Before -&amp;gt; 
+            if left = null then
+                left &amp;lt;- Node(null, null, r)
+            else
+                left.Insert(r)
+        | BeforeOverlap -&amp;gt; 
+            range &amp;lt;- {min = r.min; max = range.max}
+            mergeLeft(this)
+        | Superset -&amp;gt;
+            range &amp;lt;- r
+            mergeLeft(this)
+            mergeRight(this)
+        | Subset -&amp;gt; ()
+
+    member this.Left with get() : Node = left and set(x) = left &amp;lt;- x
+    member this.Right with get() : Node = right and set(x) = right &amp;lt;- x
+    member this.Range with get() : Range = range and set(x) = range &amp;lt;- x
+
+    static member op_Equality (a : Node, b : Node) =
+        a.Range = b.Range
+
+    override this.ToString() =
+        sprintf &quot;%A&quot; this.Range
+
+type RangeTree() =
+    let mutable root = null
+
+    member this.Add(range) =
+        if root = null then
+            root &amp;lt;- Node(null, null, range)
+        else
+            root.Insert(range)
+
+    static member fromArray(values : Range seq) =
+        let tree = new RangeTree()
+        values |&amp;gt; Seq.iter (fun value -&amp;gt; tree.Add(value))
+        tree
+
+    member this.Seq 
+        with get() =
+            let rec inOrder(node : Node) =
+                seq {
+                    if node &amp;lt;&amp;gt; null then
+                        yield! inOrder node.Left
+                        yield {min = node.Range.min; max = node.Range.max}
+                        yield! inOrder node.Right
+                }
+            inOrder root
+
+let TestRange() =
+    printf &quot;\n&quot;
+
+    let source(n) = 
+        let rnd = new Random(n)
+        let rand x = rnd.NextDouble() * float x |&amp;gt; int64
+        let rangeRnd() =
+            let a = rand 1500
+            {min = a; max = a + rand 15}
+        [|for n in 1 .. 50 do yield rangeRnd()|]
+
+    let shuffle n (array:_[]) =
+        let rnd = new Random(n)
+        for i in 0 .. array.Length - 1 do
+            let n = rnd.Next(i)
+            let temp = array.[i]
+            array.[i] &amp;lt;- array.[n]
+            array.[n] &amp;lt;- temp
+        array
+
+    let testRangeAdd n i =
+        let dataSet1 = source (n+0)
+        let dataSet2 = source (n+1)
+        let dataSet3 = source (n+2)
+        let result1 = Array.concat [dataSet1; dataSet2; dataSet3] |&amp;gt; shuffle (i+3) |&amp;gt; RangeTree.fromArray 
+        let result2 = Array.concat [dataSet2; dataSet3; dataSet1] |&amp;gt; shuffle (i+4) |&amp;gt; RangeTree.fromArray 
+        let result3 = Array.concat [dataSet3; dataSet1; dataSet2] |&amp;gt; shuffle (i+5) |&amp;gt; RangeTree.fromArray 
+        let test1 = (result1.Seq, result2.Seq) ||&amp;gt; Seq.forall2 (fun a b -&amp;gt; a.min = b.min &amp;amp;&amp;amp; a.max = b.max) 
+        let test2 = (result2.Seq, result3.Seq) ||&amp;gt; Seq.forall2 (fun a b -&amp;gt; a.min = b.min &amp;amp;&amp;amp; a.max = b.max) 
+        let test3 = (result3.Seq, result1.Seq) ||&amp;gt; Seq.forall2 (fun a b -&amp;gt; a.min = b.min &amp;amp;&amp;amp; a.max = b.max) 
+
+        let print dataSet =
+            dataSet |&amp;gt; Seq.iter (fun r -&amp;gt; printf &quot;%s &quot; &amp;lt;| string r)
+
+        if not (test1 &amp;amp;&amp;amp; test2 &amp;amp;&amp;amp; test3) then
+            printf &quot;\n\nTest# %A: &quot; n
+            printf &quot;\nSource 1: %A: &quot; (n+0)
+            dataSet1 |&amp;gt; print
+            printf &quot;\nSource 2: %A: &quot; (n+1)
+            dataSet2 |&amp;gt; print
+            printf &quot;\nSource 3: %A: &quot; (n+2)
+            dataSet3 |&amp;gt; print
+            printf &quot;\nResult 1: %A: &quot; (n+0)
+            result1.Seq |&amp;gt; print
+            printf &quot;\nResult 2: %A: &quot; (n+1)
+            result2.Seq |&amp;gt; print
+            printf &quot;\nResult 3: %A: &quot; (n+2)
+            result3.Seq |&amp;gt; print
+            ()
+
+    for i in 1 .. 10 do
+        for n in 1 .. 1000 do
+            testRangeAdd n i
+        printf &quot;\n%d&quot; (i * 1000)
+
+    printf &quot;\nDone&quot;
+
+TestRange()
+
+System.Console.ReadLine() |&amp;gt; ignore
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Test cases for Range&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;After         (11, 14)      |   | &amp;lt;--&amp;gt;
+AfterOverlap  (10, 14)      |   |&amp;lt;---&amp;gt;
+AfterOverlap  ( 9, 14)      |   +----&amp;gt;
+AfterOverlap  ( 6, 14)      |&amp;lt;--+----&amp;gt;
+ &quot;Test Case&quot;  ( 5,  9)      +---+
+BeforeOverlap ( 0,  8) &amp;lt;----+--&amp;gt;|
+BeforeOverlap ( 0,  5) &amp;lt;----+   |
+BeforeOverlap ( 0,  4) &amp;lt;---&amp;gt;|   |
+Before        ( 0,  3) &amp;lt;--&amp;gt; |   |
+Superset      ( 4, 10)     &amp;lt;+---+&amp;gt;
+Subset        ( 5,  9)      +---+
+Subset        ( 6,  8)      |&amp;lt;-&amp;gt;|
+&lt;/code&gt;&lt;/pre&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/1832522/telerik-radcombobox-javascript-api-problem</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Telerik RadComboBox javascript API problem</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="javascript"/><category scheme="http://stackoverflow.com/feeds/tags" term="asp.net"/><category scheme="http://stackoverflow.com/feeds/tags" term="telerik"/>
+        <author><name>Grubl3r</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/1832522/telerik-radcombobox-javascript-api-problem" />
+        <published>2009-12-02T12:07:05Z</published>
+        <updated>2009-12-07T00:54:50Z</updated>
+        <summary type="html">
+            &lt;p&gt;Hi all, I've been having a problem using the javascript API of the RadComboBox from Telerik. And no I don't have the power to switch over from Telerik to jQuery or another framework.. Suffice to say I have hardly any hair left on my head now :P&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;In a nutshell&lt;/strong&gt; I want to grab the selected index of one RadComboBox, and update another RadComboBox to this index. Eg. selecting a value in the first RCB automatically updates the second on the client side. My problem really is that I can't find a way to set the index on the second RCB, even though the docs says there is an easy way to do it .. (you heard that one before right :) &lt;/p&gt;
+
+&lt;p&gt;I've followed the API docs at this page (&lt;a href=&quot;http://www.telerik.com/help/aspnet/combobox/combo%5Fclient%5Fmodel.html&quot; rel=&quot;nofollow&quot;&gt;telerik docs&lt;/a&gt;), and also used the javascript debugger in IE8 and the excellent FireBug in Firefox. I'm using Telerik.Web.UI assembly version 2009.2.826.20&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I don't need full source for a solution, but a nudge in the right direction would be much appreciated! :)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Here's some example code I cooked together: &lt;/p&gt;
+
+&lt;p&gt;&lt;hr&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    &amp;lt;form id=&quot;form1&quot; runat=&quot;server&quot;&amp;gt;
+    &amp;lt;asp:ScriptManager ID=&quot;ScriptManager1&quot; runat=&quot;server&quot; /&amp;gt;
+
+    &amp;lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&amp;gt;
+        function masterChanged(item)
+        {
+            var detailCB = &amp;lt;%= DetailCB.ClientID %&amp;gt;;
+
+            var index = item.get_selectedIndex();
+            detailCB.SetSelected(index);             //method does not exist, but should according to the docs..
+
+        }
+    &amp;lt;/script&amp;gt;
+
+    &amp;lt;div&amp;gt;
+        &amp;lt;telerik:RadComboBox ID=&quot;MasterCB&quot; runat=&quot;server&quot; OnClientSelectedIndexChanged=&quot;masterChanged&quot;&amp;gt;
+            &amp;lt;Items&amp;gt;
+                &amp;lt;telerik:RadComboBoxItem Text=&quot;One&quot; Value=&quot;1&quot; runat=&quot;server&quot; /&amp;gt;                
+                &amp;lt;telerik:RadComboBoxItem Text=&quot;Two&quot; Value=&quot;2&quot; runat=&quot;server&quot; /&amp;gt;
+                &amp;lt;telerik:RadComboBoxItem Text=&quot;Three&quot; Value=&quot;3&quot; runat=&quot;server&quot; /&amp;gt;
+            &amp;lt;/Items&amp;gt;
+        &amp;lt;/telerik:RadComboBox&amp;gt;
+    &amp;lt;/div&amp;gt;
+
+    &amp;lt;div&amp;gt;
+        &amp;lt;telerik:RadComboBox ID=&quot;DetailCB&quot; runat=&quot;server&quot;&amp;gt;
+            &amp;lt;Items&amp;gt;
+                &amp;lt;telerik:RadComboBoxItem Text=&quot;One&quot; Value=&quot;1&quot; runat=&quot;server&quot; /&amp;gt;                
+                &amp;lt;telerik:RadComboBoxItem Text=&quot;Two&quot; Value=&quot;2&quot; runat=&quot;server&quot; /&amp;gt;
+                &amp;lt;telerik:RadComboBoxItem Text=&quot;Three&quot; Value=&quot;3&quot; runat=&quot;server&quot; /&amp;gt;
+            &amp;lt;/Items&amp;gt;
+        &amp;lt;/telerik:RadComboBox&amp;gt;
+    &amp;lt;/div&amp;gt;
+&amp;lt;/form&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I don't need full source for a solution, but a kick in the right direction would be much appreciated! :)&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+    <entry>
+        <id>http://stackoverflow.com/questions/544162/looking-for-a-datagridview-that-allows-grouping</id>
+        <re:rank scheme="http://stackoverflow.com">0</re:rank>
+        <title type="text">Looking for a DataGridView that allows grouping</title>
+        <category scheme="http://stackoverflow.com/feeds/tags" term="vb.net"/><category scheme="http://stackoverflow.com/feeds/tags" term="controls"/><category scheme="http://stackoverflow.com/feeds/tags" term="c#"/>
+        <author><name>ohu812</name></author>
+        <link rel="alternate" href="http://stackoverflow.com/questions/544162/looking-for-a-datagridview-that-allows-grouping" />
+        <published>2009-02-13T00:07:30Z</published>
+        <updated>2009-12-07T00:54:45Z</updated>
+        <summary type="html">
+            &lt;p&gt;Basically I'm looking for a control that allows for grouping in a DataGridView control that can also be editted (I.E. somthing like DataGridView and TreeView into a single control). &lt;/p&gt;
+
+&lt;p&gt;Thanks in advance.&lt;/p&gt;
+
+        </summary>
+    </entry>
+    
+</feed>
