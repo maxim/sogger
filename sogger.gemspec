@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
      "lib/sogger/question.rb",
      "lib/sogger/runner.rb",
      "lib/sogger/sogger.rb",
+     "sogger.gemspec",
      "test/fixtures/so_feed_sample.xml",
      "test/helper.rb",
      "test/test_question.rb",

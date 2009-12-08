@@ -4,7 +4,7 @@ module Sogger
     attr_reader :raw_data
     
     SO_FEED_URL = "http://stackoverflow.com/feeds"
-    DEFAULT_SAVE_PATH = "tmp/feed.xml"
+    DEFAULT_SAVE_PATH = ::Tempfile.new("sogger_feed.xml").path
     self.save_path = DEFAULT_SAVE_PATH
     
     def initialize(questions = [])

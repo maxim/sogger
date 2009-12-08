@@ -1,3 +1,4 @@
+require 'tempfile'
 require 'open-uri'
 require 'nokogiri'
 require 'meow'
