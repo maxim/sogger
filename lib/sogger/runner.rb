@@ -49,6 +49,10 @@ module Sogger
         end
       end
       
+      trap("INT") do
+        puts "  Exiting, please wait..."
+        [updater, notifier].map(&:kill)
+      end
       [updater, notifier].map(&:join)
     end
     
