@@ -2,6 +2,7 @@
 require 'rubygems'
 require File.expand_path(File.join(File.dirname(__FILE__), '..', 'lib', 'sogger'))
 
-sogger = Sogger::Runner.new
+sogger = Sogger::Runner.new(:filter => ARGV)
+sogger.log "Filtering tags: #{sogger.filter.inspect}." unless sogger.filter.empty?
 puts "Press CTRL+C to stop..."
 sogger.run
