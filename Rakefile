@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "sogger"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Stack overflow growler written in Ruby.}
+    gem.description = %Q{Simple tool that growls new questions from Stack Overflow. Supports filtering by tags.}
     gem.email = "max@bitsonnet.com"
     gem.homepage = "http://github.com/maxim/sogger"
     gem.authors = ["Maxim Chernyak"]
